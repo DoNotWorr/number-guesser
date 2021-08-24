@@ -36,3 +36,7 @@ const updateScore = (playerType) => {
             break;
     }
 }
+
+const advanceRound = () => {
+    currentRoundNumber++
+}
