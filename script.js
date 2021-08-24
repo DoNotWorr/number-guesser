@@ -9,8 +9,30 @@ const generateTarget = () => {
     return Math.floor(Math.random() * 10)
 }
 
-const compareGuesses = (playerGuess, computerGuess, target) => {
-    let playerDelta = Math.abs(target - playerGuess);
+/**
+ * Compare two guesses with a target number
+ * @param {*} humanGuess human player guess
+ * @param {*} computerGuess computer player guess
+ * @param {*} target target number
+ * @returns true if draw or human is closer. False if computer is closer.
+ */
+const compareGuesses = (humanGuess, computerGuess, target) => {
+    let humanDelta = Math.abs(target - humanGuess);
     let computerDelta = Math.abs(target - computerGuess);
-    return playerDelta <= computerDelta
+    return humanDelta <= computerDelta
+}
+
+/**
+ * Updates scoreboard. Adds 1 point.
+ * @param {*} playerType enum string "human" or "computer"
+ */
+const updateScore = (playerType) => {
+    switch (playerType) {
+        case playerType === "human":
+            humanScore++;
+            break;
+        case playerType === "computer":
+            computerScore++;
+            break;
+    }
 }
