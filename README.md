@@ -1,0 +1,1 @@
+Note: The code in game.js is template code in the exercise
