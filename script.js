@@ -40,3 +40,5 @@ const updateScore = (playerType) => {
 const advanceRound = () => {
     currentRoundNumber++
 }
+
+module.exports = compareGuesses;
