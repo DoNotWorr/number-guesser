@@ -1,0 +1,22 @@
+{
+  "name": "4.1",
+  "version": "1.0.0",
+  "description": "Note: The code in game.js is template code in the exercise",
+  "main": "game.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DoNotWorr/number-guesser.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DoNotWorr/number-guesser/issues"
+  },
+  "homepage": "https://github.com/DoNotWorr/number-guesser#readme",
+  "devDependencies": {
+    "jest": "^27.0.6"
+  }
+}
